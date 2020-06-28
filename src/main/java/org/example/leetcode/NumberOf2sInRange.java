@@ -7,6 +7,6 @@ package org.example.leetcode;
  **/
 public class NumberOf2sInRange {
     public int numberOf2sInRange(int n) {
-
+        return  0;
     }
 }
