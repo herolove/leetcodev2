@@ -20,6 +20,7 @@ public class MaximumSwap {
             }
             arr[i] = max_index;
         }
+
         for (int i = 0; i < c.length; i ++) {
             if (arr[i] != i && c[arr[i]] != c[i]) {
                 char tmp = c[i];
