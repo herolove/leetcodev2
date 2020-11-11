@@ -46,6 +46,20 @@ public class TitleToNumber {
         String str = "AA";
         TitleToNumber titleToNumber = new TitleToNumber();
         System.out.println(titleToNumber.titleToNumber(str));
-        System.out.println(titleToNumber.titleToNumberV2(str));
+        System.out.println(titleToNumber.titleToNumberV3(str));
+    }
+
+    public int titleToNumberV3(String s) {
+        int len = 0;
+        if (s == null || (len = s.length()) == 0) {
+            return 0;
+        }
+        int res = 0;
+        char[] chars = s.toCharArray();
+        for (char ch : chars) {
+            int sum = ch - 'A' + 1;
+            res = res * 26 + sum;
+        }
+        return res;
     }
 }
